@@ -1,0 +1,21 @@
+server:
+  port: 8088
+  # 第一个数据源
+spring:
+  datasource:
+    one-db:
+      url: jdbc:mysql://59.110.225.54:3306/eilen01
+      username: eilen
+      password: 5110
+      driver-class-name: org.gjt.mm.mysql.Driver
+      type: com.alibaba.druid.pool.DruidDataSource
+# 第二个数据源
+spring:
+  datasource:
+    two-db:
+      url: jdbc:mysql://59.110.225.54:3306/eilen01
+      username: eilen
+      password: 5110
+      driver-class-name: org.gjt.mm.mysql.Driver
+      type: com.alibaba.druid.pool.DruidDataSource
+
